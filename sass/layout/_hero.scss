@@ -1,0 +1,42 @@
+.herro {
+  display: flex;
+  justify-content: center;
+}
+.hero {
+  background: var(--secondary-gray-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/Imghero.jpg);
+  padding: 200px 0px;
+  width: 1600px;
+}
+.hero-title {
+  max-width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--text-white-color);
+}
+.hero > button {
+  padding: 10px 32px;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  border-radius: 4px;
+
+  font-weight: 700;
+  line-height: 1;
+  background: var(--button-color);
+  color: var(--praymary-white-color);
+}
+.hero > button:hover,
+.buttons:focus {
+  background-color: #188ce8;
+  color: var(--text-white-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
+}
