@@ -1,0 +1,40 @@
+// .master-icon {
+//   background-color: #ffffff;
+// }
+
+.master-social-list {
+  display: flex;
+  justify-content: center;
+}
+.master-social-item {
+  width: 44px;
+  height: 44px;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+
+.master-social-item + .master-social-item {
+  margin-left: 10px;
+}
+
+.master-social-link {
+  width: 100%;
+  height: 100%;
+  background: var(--praymary-white-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+}
+.master-sociak-icon {
+  fill: currentColor;
+}
+.master-social-link:hover,
+.master-social-link:focus {
+  background-color: var(--Web-span-text);
+  color: #ffffff;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
+}
