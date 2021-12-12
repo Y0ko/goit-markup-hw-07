@@ -8,10 +8,11 @@
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
+  & & {
+    text-transform: uppercase;
+  }
 }
-.advantages-item .advantages-item {
-  text-transform: uppercase;
-}
+
 .advantages-item-text {
   max-width: 270px;
   color: var(--textarea-color);

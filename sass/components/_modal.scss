@@ -23,12 +23,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  &:hover,
+  &:focus {
+    fill: #2196f3;
+    border: 1px solidrgbaa(0, 0, 0, 0.1);
+  }
 }
-.modal-close:hover,
-.modal-close:focus {
-  fill: #2196f3;
-  border: 1px solidrgbaa(0, 0, 0, 0.1);
-}
+
 .is-hidden {
   visibility: inherit;
   opacity: 0;
@@ -72,12 +73,12 @@
   border-radius: 4px;
   transition: border-color 300ms linear;
   outline: none;
-}
-.modal-form-input:focus {
-  border-color: #2196f3;
-}
-.modal-form-input:focus + .modal-icon {
-  fill: #2196f3;
+  &:focus {
+    border-color: #2196f3;
+  }
+  &:focus + .modal-icon {
+    fill: #2196f3;
+  }
 }
 
 .button:hover,
@@ -103,19 +104,19 @@
   box-sizing: border-box;
   border-radius: 4px;
   outline: none;
-}
-.modal-feedback:focus {
-  border-color: var(--button-color);
+  &:focus {
+    border-color: var(--button-color);
+  }
+  &::placeholder {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
-.modal-feedback::placeholder {
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-
-  color: rgba(117, 117, 117, 0.5);
-}
 .modal-form-text {
   font-weight: 500;
   font-size: 12px;

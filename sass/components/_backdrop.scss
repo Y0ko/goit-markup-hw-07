@@ -6,7 +6,9 @@
   top: 0;
   transition: opacity 2222ms, vvisibility 2222ms;
 }
-.backdrop.is-hidden .modal {
-  transform: scale(1.5) rotate(180deg) translate(+999px);
-  transition: transform 2000ms;
+.backdrop.is-hidden {
+  .modal {
+    transform: scale(1.5) rotate(180deg) translate(+999px);
+    transition: transform 2000ms;
+  }
 }

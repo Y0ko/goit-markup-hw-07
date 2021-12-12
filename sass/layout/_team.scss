@@ -38,7 +38,7 @@
   background: #ffffff;
 
   border-radius: 0px 0px 4px 4px;
-}
-.team-all + .team-all {
-  margin-left: 30px;
+  & + & {
+    margin-left: 30px;
+  }
 }

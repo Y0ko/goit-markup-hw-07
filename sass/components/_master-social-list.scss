@@ -11,10 +11,9 @@
   height: 44px;
   margin-top: 16px;
   margin-bottom: 30px;
-}
-
-.master-social-item + .master-social-item {
-  margin-left: 10px;
+  & + & {
+    margin-left: 10px;
+  }
 }
 
 .master-social-link {
@@ -26,15 +25,16 @@
   justify-content: center;
   align-items: center;
   color: #afb1b8;
+  &:hover,
+  &:focus {
+    background-color: var(--Web-span-text);
+    color: #ffffff;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform;
+  }
 }
+
 .master-sociak-icon {
   fill: currentColor;
-}
-.master-social-link:hover,
-.master-social-link:focus {
-  background-color: var(--Web-span-text);
-  color: #ffffff;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: transform;
 }

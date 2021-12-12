@@ -2,15 +2,20 @@
   background: var(--secondary-gray-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  & .logo {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--text-white-color);
+  }
+  & li {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--text-white-color);
+  }
 }
 
-.footer .logo {
-  display: block;
-  margin-bottom: 20px;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--text-white-color);
-}
 .link:focus,
 .link:hover {
   color: var(--button-color);
@@ -18,23 +23,19 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: transform;
 }
-.footer li {
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--text-white-color);
-}
+
 .footer-addres-link {
   margin-bottom: 9px;
 }
 .footer-link {
   color: var(--footer-text-color);
-}
-.footer-link:hover,
-.footer-link:focus {
-  color: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: transform;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform;
+  }
 }
 
 .footer-connect-title {
@@ -54,10 +55,9 @@
 .footer-social-item {
   width: 44px;
   height: 44px;
-}
-
-.footer-social-item + .footer-social-item {
-  margin-left: 10px;
+  & + & {
+    margin-left: 10px;
+  }
 }
 
 .footer-social-link {
@@ -69,18 +69,17 @@
   justify-content: center;
   align-items: center;
   color: #ffffff;
+  &:hover,
+  &:focus {
+    background-color: var(--Web-span-text);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform;
+  }
 }
 
 .footer-social-icon {
   fill: currentColor;
-}
-
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: var(--Web-span-text);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: transform;
 }
 
 .footer-container {

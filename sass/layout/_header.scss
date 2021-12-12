@@ -5,18 +5,32 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: transform;
 }
-.nav a {
-  color: var(--title-text-color);
-}
-.nav a:hover,
-.nav a:focus {
-  color: var(--button-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: transform;
+.nav {
+  display: flex;
+  align-items: center;
+
+  & a {
+    color: var(--title-text-color);
+    &:hover,
+    &:focus {
+      color: var(--button-color);
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: transform;
+    }
+  }
 }
 .header {
   border: 1px solid #ececec;
+  & .logo {
+    font-family: Raleway;
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+  }
 }
 
 .header-container {
@@ -25,24 +39,10 @@
   align-items: center;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-}
-
 .navigation {
   display: flex;
 }
 
-.header .logo {
-  font-family: Raleway;
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-}
 .menu-logo {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -62,17 +62,16 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   position: relative;
-}
-
-.nav-link.active::after {
-  content: '';
-  width: 100%;
-  height: 4px;
-  background-color: var(--Web-span-text);
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  border-radius: 2px;
+  &.active::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: var(--Web-span-text);
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    border-radius: 2px;
+  }
 }
 
 .contacts {
@@ -91,14 +90,15 @@
   line-height: 1;
   letter-spacing: 0.02em;
   color: var(--textarea-color);
+  &:hover,
+  &:focus {
+    fill: currentColor;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform;
+  }
 }
-.contact-link:hover,
-.contact-link:focus {
-  fill: currentColor;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: transform;
-}
+
 .contacts-link-icon {
   margin-right: 10px;
 }

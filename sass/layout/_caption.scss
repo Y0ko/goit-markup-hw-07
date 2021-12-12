@@ -12,17 +12,18 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+  & li:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.caption-item li:not(:last-child) {
-  margin-right: 30px;
-}
+
 .caption-image {
   display: flex;
   width: 370px;
   height: 294px;
-}
-.caption-item > li {
-  position: relative;
+  & > li {
+    position: relative;
+  }
 }
 
 .caption-title-text {
