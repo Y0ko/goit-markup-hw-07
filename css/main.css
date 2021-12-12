@@ -27,7 +27,8 @@
   overflow: hidden;
 }
 
-ul li {
+ul,
+li {
   list-style: none;
 }
 
