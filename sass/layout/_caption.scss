@@ -1,11 +1,11 @@
 .caption {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 2.6;
+  @include font(700, 36px, 2.6, 0.03em);
+  // font-weight: 700;
+  // font-size: 36px;
+  // line-height: 2.6;
+  //   letter-spacing: 0.03em;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
-
   margin-bottom: 50px;
 }
 .caption-item {
@@ -15,21 +15,22 @@
   & li:not(:last-child) {
     margin-right: 30px;
   }
+  & > li {
+    position: relative;
+  }
 }
 
 .caption-image {
   display: flex;
   width: 370px;
   height: 294px;
-  & > li {
-    position: relative;
-  }
 }
 
 .caption-title-text {
   position: absolute;
   display: flex;
   justify-self: center;
+  text-align: center;
   bottom: 0;
   left: 0;
   width: 370px;
@@ -41,7 +42,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
+
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }

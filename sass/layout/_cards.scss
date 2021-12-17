@@ -18,10 +18,10 @@
   height: 100%;
   transform: translateY(100%);
   transition-duration: 500ms;
-}
-.card:hover .cards-overlay-text {
-  transform: translateY(0);
-  transition-duration: 500ms;
+  .card:hover & {
+    transform: translateY(0);
+    transition-duration: 500ms;
+  }
 }
 
 .card {
@@ -40,10 +40,11 @@
 }
 
 .card-item {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.03em;
+  @include font(700, 18px, 2, 0.03em);
+  // font-weight: 700;
+  // font-size: 18px;
+  // line-height: 2;
+  // letter-spacing: 0.03em;
   color: var(--title-text-color);
 
   padding-left: 24px;

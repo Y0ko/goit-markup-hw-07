@@ -3,10 +3,11 @@
 }
 .team-caption {
   text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 2.6;
-  letter-spacing: 0.03em;
+  @include font(700, 36px, 2.6, 0.03em);
+  // font-weight: 700;
+  // font-size: 36px;
+  // line-height: 2.6;
+  // letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
 .team-item {
@@ -14,9 +15,11 @@
   justify-content: space-evenly;
 }
 .caption-team {
-  font-weight: 500;
-  line-height: 1.12;
-  letter-spacing: 0.03em;
+  @include font(500, 16px, 1.12, 0.03em);
+  // font-weight: 500;
+  // font-size: 16px;
+  // line-height: 1.12;
+  // letter-spacing: 0.03em;
   margin-top: 10px;
   text-align: center;
 }

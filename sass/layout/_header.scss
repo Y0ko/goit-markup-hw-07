@@ -1,10 +1,10 @@
-.logo a:hover,
-.logo a:focus {
-  color: var(--button-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: transform;
-}
+// .logo a:hover,
+// .logo a:focus {
+//   color: var(--button-color);
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//   transition-property: transform;
+// }
 .nav {
   display: flex;
   align-items: center;
@@ -25,10 +25,11 @@
   & .logo {
     font-family: Raleway;
     color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+    @include font(700, 26px, 1.19, 0.03em);
+    // font-weight: 700;
+    // font-size: 26px;
+    // line-height: 1.19;
+    // letter-spacing: 0.03em;
     text-decoration: none;
   }
 }
@@ -57,10 +58,11 @@
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(500, 14px, 1.14, 0.02em);
+  // font-weight: 500;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.02em;
   position: relative;
   &.active::after {
     content: '';
@@ -85,10 +87,11 @@
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1;
-  letter-spacing: 0.02em;
+  @include font(500, 14px, 1, 0.02em);
+  // font-weight: 500;
+  // font-size: 14px;
+  // line-height: 1;
+  // letter-spacing: 0.02em;
   color: var(--textarea-color);
   &:hover,
   &:focus {
