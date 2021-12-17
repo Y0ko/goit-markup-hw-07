@@ -24,10 +24,10 @@
   transition-property: transform;
 }
 
-.footer-addres-link {
+.footer__addres-link {
   margin-bottom: 9px;
 }
-.footer-link {
+.footer__link {
   color: var(--footer-text-color);
   &:hover,
   &:focus {
@@ -38,7 +38,7 @@
   }
 }
 
-.footer-connect-title {
+.footer__connect-title {
   @include font(700, 16px, 1.16, 0.03em);
   // font-weight: 700;
   // font-size: 14px;
@@ -49,11 +49,11 @@
   margin-bottom: 20px;
 }
 
-.footer-social-list {
+.footer__social-list {
   display: flex;
   justify-content: center;
 }
-.footer-social-item {
+.footer__social-item {
   width: 44px;
   height: 44px;
   & + & {
@@ -61,7 +61,7 @@
   }
 }
 
-.footer-social-link {
+.footer__social-link {
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.1);
@@ -79,24 +79,24 @@
   }
 }
 
-.footer-social-icon {
+.footer__social-icon {
   fill: currentColor;
 }
 
-.footer-container {
+.footer__container {
   display: flex;
   align-items: center;
 }
 
-.footer-connect {
+.footer__connect {
   display: block;
   justify-content: center;
   margin-left: 70px;
 }
-.footer-subscription {
+.footer__subscription {
   padding-left: 93px;
 }
-.footer-subscription-text {
+.footer__subscription-text {
   @include font(700, 14px, 1.14, 0.03em);
   // font-weight: 700;
   // font-size: 14px;
@@ -110,7 +110,7 @@
 .subscription-flex {
   display: flex;
 }
-.footer-subscription-input {
+.footer__subscription-input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -122,6 +122,7 @@
 
   outline: none;
 }
+
 .subscription-btn {
   width: 200px;
   height: 50px;

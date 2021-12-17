@@ -8,7 +8,7 @@
   color: var(--title-text-color);
   margin-bottom: 50px;
 }
-.caption-item {
+.caption__item {
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -20,13 +20,13 @@
   }
 }
 
-.caption-image {
+.caption__image {
   display: flex;
   width: 370px;
   height: 294px;
 }
 
-.caption-title-text {
+.caption__title-text {
   position: absolute;
   display: flex;
   justify-self: center;

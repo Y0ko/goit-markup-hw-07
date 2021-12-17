@@ -1,7 +1,9 @@
 @import './utils/plaseholder';
 @import './utils/vars';
 @import './utils/hiden';
+
 @import './base/reset';
+@import './base/commons';
 
 @import './components/container';
 @import './components/btn';
@@ -15,7 +17,6 @@
 @import './components/backdrop';
 @import './components/modal';
 
-@import './base/commons';
 @import './layout/header';
 @import './layout/advantages';
 @import './layout/hero';

@@ -1,11 +1,4 @@
-// .logo a:hover,
-// .logo a:focus {
-//   color: var(--button-color);
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//   transition-property: transform;
-// }
-.nav {
+.header__nav {
   display: flex;
   align-items: center;
 
@@ -20,7 +13,7 @@
     }
   }
 }
-.header {
+.headr {
   border: 1px solid #ececec;
   & .logo {
     font-family: Raleway;
@@ -34,26 +27,26 @@
   }
 }
 
-.header-container {
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navigation {
+.header__navigation {
   display: flex;
 }
 
-.menu-logo {
+.header__menu-logo {
   padding-top: 24px;
   padding-bottom: 24px;
   margin-right: 93px;
 }
-.nav-item:not(:last-child) {
+.header__nav-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav-link {
+.header__nav-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -76,14 +69,14 @@
   }
 }
 
-.contacts {
+.header__contacts {
   display: flex;
   margin-left: auto;
 }
-.contact-item:not(:last-child) {
+.header__contacts__item:not(:last-child) {
   margin-right: 50px;
 }
-.contact-link {
+.header__contacts__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -102,6 +95,6 @@
   }
 }
 
-.contacts-link-icon {
+.header__contacts__link-icon {
   margin-right: 10px;
 }
