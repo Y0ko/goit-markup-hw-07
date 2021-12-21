@@ -1,4 +1,4 @@
-.advantages__items {
+.advantages {
   display: flex;
   justify-content: space-between;
 }
@@ -14,7 +14,7 @@
   }
 }
 
-.advantages__item-text {
+.advantages__text {
   max-width: 270px;
   color: var(--textarea-color);
   line-height: 1.7;

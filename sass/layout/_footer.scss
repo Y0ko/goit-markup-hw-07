@@ -2,13 +2,6 @@
   background: var(--secondary-gray-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  & .logo {
-    display: block;
-    margin-bottom: 20px;
-    font-size: 26px;
-    line-height: 1.19;
-    color: var(--text-white-color);
-  }
   & li {
     font-size: 14px;
     line-height: 1.71;
@@ -24,10 +17,10 @@
   transition-property: transform;
 }
 
-.footer__addres-link {
+.footer-addres__link {
   margin-bottom: 9px;
 }
-.footer__link {
+.footer-addres__contact {
   color: var(--footer-text-color);
   &:hover,
   &:focus {
@@ -38,7 +31,7 @@
   }
 }
 
-.footer__connect-title {
+.connect-titles {
   @include font(700, 16px, 1.16, 0.03em);
   // font-weight: 700;
   // font-size: 14px;
@@ -49,11 +42,11 @@
   margin-bottom: 20px;
 }
 
-.footer__social-list {
+.social-list {
   display: flex;
   justify-content: center;
 }
-.footer__social-item {
+.social-footer {
   width: 44px;
   height: 44px;
   & + & {
@@ -61,7 +54,7 @@
   }
 }
 
-.footer__social-link {
+.social-footer__link {
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.1);
@@ -79,7 +72,7 @@
   }
 }
 
-.footer__social-icon {
+.social-footer__icon {
   fill: currentColor;
 }
 
@@ -88,15 +81,15 @@
   align-items: center;
 }
 
-.footer__connect {
+.connect {
   display: block;
   justify-content: center;
   margin-left: 70px;
 }
-.footer__subscription {
+.subscription {
   padding-left: 93px;
 }
-.footer__subscription-text {
+.subscription__text {
   @include font(700, 14px, 1.14, 0.03em);
   // font-weight: 700;
   // font-size: 14px;
@@ -107,10 +100,10 @@
   color: #ffffff;
   padding-bottom: 20px;
 }
-.subscription-flex {
+.subscription__flex {
   display: flex;
 }
-.footer__subscription-input {
+.subscription__input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -123,7 +116,7 @@
   outline: none;
 }
 
-.subscription-btn {
+.subscription__btn {
   width: 200px;
   height: 50px;
   @include font(700, 16px, 1.87, 0.06em);

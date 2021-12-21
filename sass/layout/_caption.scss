@@ -1,14 +1,14 @@
-.caption {
+.caption-title {
   @include font(700, 36px, 2.6, 0.03em);
   // font-weight: 700;
   // font-size: 36px;
   // line-height: 2.6;
-  //   letter-spacing: 0.03em;
+  // letter-spacing: 0.03em;
   text-align: center;
   color: var(--title-text-color);
   margin-bottom: 50px;
 }
-.caption__item {
+.caption {
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -20,13 +20,13 @@
   }
 }
 
-.caption__image {
+.component__image {
   display: flex;
   width: 370px;
   height: 294px;
 }
 
-.caption__title-text {
+.component__text {
   position: absolute;
   display: flex;
   justify-self: center;

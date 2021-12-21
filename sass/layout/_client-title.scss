@@ -1,4 +1,4 @@
-.client__title {
+.client-title {
   @include font(700, 36px, 1.16, 0.03em);
   // font-weight: 700;
   // font-size: 36px;
@@ -9,11 +9,11 @@
 
   color: #212121;
 }
-.client__list {
+.client-list {
   display: flex;
   justify-content: center;
 }
-.client__item {
+.client-orig {
   width: 170px;
   height: 92px;
   margin-top: 16px;
@@ -23,7 +23,7 @@
   }
 }
 
-.client__link {
+.client-orig__link {
   width: 100%;
   height: 100%;
   display: flex;
@@ -42,6 +42,6 @@
     transition-property: transform;
   }
 }
-.client__icon {
+.client-orig__icon {
   fill: currentColor;
 }

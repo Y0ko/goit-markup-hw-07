@@ -1,12 +1,29 @@
-// .master-icon {
-//   background-color: #ffffff;
-// }
+.master-icon {
+  background-color: #ffffff;
+}
 
-.master__social-list {
+.master__list {
   display: flex;
   justify-content: center;
 }
-.master__social-item {
+
+.master__team {
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+  text-align: center;
+}
+.master__text {
+  /*color: var(--textarea-color);*/
+  font-weight: 400;
+  line-height: 1.12;
+  text-align: center;
+  margin: 10px;
+  /*margin-bottom: 30px;*/
+}
+
+.social {
   width: 44px;
   height: 44px;
   margin-top: 16px;
@@ -15,8 +32,7 @@
     margin-left: 10px;
   }
 }
-
-.master__social-link {
+.social__link {
   width: 100%;
   height: 100%;
   background: var(--praymary-white-color);
@@ -34,7 +50,6 @@
     transition-property: transform;
   }
 }
-
-.master__social-icon {
+.social__icon {
   fill: currentColor;
 }
